@@ -6,25 +6,46 @@ plugins {
 
 android {
     namespace = "jp.yuyuyu.habits"
-    compileSdk = 35
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "jp.yuyuyu.habits"
-        minSdk = 34
-        targetSdk = 35
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            // TODO デバッグビルド時の設定
+        }
         release {
             isMinifyEnabled = false
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        flavorDimensions += listOf("environment")
+        productFlavors {
+            // 開発環境
+            create("dev") {
+                dimension = "environment"
+                applicationIdSuffix = ".develop"
+
+            }
+            // 本番環境
+            create("prod") {
+                dimension = "environment"
+            }
+        }
+        buildFeatures {
+            buildConfig = true
+            compose = true
         }
     }
     compileOptions {
