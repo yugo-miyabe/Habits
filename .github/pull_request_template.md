@@ -6,5 +6,5 @@
 |--|--|
 | <img src="" width=200> | <img src="" width=200> |
 
-## CheckeList
+## CheckList
 - [ ] build is successful
