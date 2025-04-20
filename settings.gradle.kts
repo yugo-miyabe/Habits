@@ -23,3 +23,4 @@ rootProject.name = "Habits"
 include(":app")
 include(":core")
 include(":feature")
+include(":core:model")
