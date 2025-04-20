@@ -23,7 +23,7 @@ android {
             // TODO デバッグビルド時の設定
         }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
