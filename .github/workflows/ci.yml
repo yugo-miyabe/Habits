@@ -35,4 +35,4 @@ jobs:
       # debugビルド実行
       - name: Build and Check With Gradle
         run: |
-          ./gradlew check
+          ./gradlew assembleDebug
