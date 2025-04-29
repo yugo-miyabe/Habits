@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             HabitsTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeti
-                    ng(
+                    Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
