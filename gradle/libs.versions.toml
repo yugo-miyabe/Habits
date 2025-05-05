@@ -12,6 +12,7 @@ appcompat = "1.7.0"
 material = "1.12.0"
 hilt = "2.56.1"
 ksp = "2.0.20-1.0.25"
+timber = "5.0.1"
 
 minSdk = "33"
 targetSdk = "35"
@@ -36,6 +37,7 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

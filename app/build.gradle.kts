@@ -79,6 +79,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    // Timber
+    implementation(libs.timber)
 }
