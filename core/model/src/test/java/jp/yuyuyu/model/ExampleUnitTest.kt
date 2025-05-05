@@ -1,4 +1,4 @@
-package jp.yuyuyu.core
+package jp.yuyuyu.model
 
 import org.junit.Test
 
