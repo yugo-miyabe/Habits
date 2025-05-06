@@ -1,4 +1,4 @@
-package jp.yuyuyu.feature
+package jp.yuyuyu.setting
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("jp.yuyuyu.feature.test", appContext.packageName)
+        assertEquals("jp.yuyuyu.setting.test", appContext.packageName)
     }
 }
