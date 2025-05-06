@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "jp.yuyuyu.home"
+    namespace = "jp.yuyuyu.setting"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
