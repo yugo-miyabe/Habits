@@ -1,7 +1,11 @@
 *.iml
 .gradle
 /local.properties
+
+# IDEA/Android Studio project files, because
+/.idea
 .idea/*
+
 .DS_Store
 /build
 /captures

@@ -1,4 +1,4 @@
-package jp.yuyuyu.feature
+package jp.yuyuyu.setting
 
 import org.junit.Test
 
