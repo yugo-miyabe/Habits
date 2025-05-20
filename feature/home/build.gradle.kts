@@ -50,4 +50,8 @@ dependencies {
     // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+
+    // local
+    implementation(projects.core.ui)
+    implementation(projects.core.model)
 }
