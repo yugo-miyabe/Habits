@@ -18,6 +18,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "Habits"
 include(":app")
@@ -26,3 +27,4 @@ include(":feature")
 include(":core:model")
 include(":feature:home")
 include(":feature:setting")
+include(":core:ui")
