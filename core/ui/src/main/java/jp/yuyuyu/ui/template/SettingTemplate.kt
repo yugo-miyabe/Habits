@@ -1,4 +1,8 @@
 package jp.yuyuyu.ui.template
 
-class SettingTemplate {
+import androidx.compose.runtime.Composable
+
+@Composable
+fun SettingTemplate() {
+
 }

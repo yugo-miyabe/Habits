@@ -50,12 +50,12 @@ dependencies {
     ksp(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
 
-    // local
-    implementation(projects.core.ui)
-    implementation(projects.core.model)
-
     // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // local
+    implementation(projects.core.ui)
+    implementation(projects.core.model)
 }
