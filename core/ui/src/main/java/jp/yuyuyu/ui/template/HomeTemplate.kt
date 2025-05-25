@@ -22,6 +22,6 @@ fun HomeTemplate() {
 
 @Composable
 @Preview(showBackground = true)
-fun HomeTemplatePreview() {
+private fun HomeTemplatePreview() {
     HomeTemplate()
 }
