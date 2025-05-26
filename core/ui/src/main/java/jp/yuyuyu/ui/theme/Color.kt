@@ -1,4 +1,4 @@
-package jp.yuyuyu.habits.ui.theme
+package jp.yuyuyu.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
