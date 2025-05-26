@@ -1,4 +1,4 @@
-package jp.yuyuyu.habits.ui.theme
+package jp.yuyuyu.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -87,6 +87,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     // local
+    implementation(projects.core.ui)
     implementation(projects.feature.home)
     implementation(projects.feature.setting)
 }
