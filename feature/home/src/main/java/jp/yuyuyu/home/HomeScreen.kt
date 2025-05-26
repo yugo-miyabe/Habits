@@ -6,7 +6,8 @@ import jp.yuyuyu.ui.template.HomeTemplate
 
 @Composable
 fun HomeScreen(
+    onSettingClick: () -> Unit,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
-    HomeTemplate()
+    HomeTemplate(onSettingClick = onSettingClick)
 }

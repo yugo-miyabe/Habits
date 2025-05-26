@@ -1,25 +1,26 @@
-package jp.yuyuyu.home.navigation
+package jp.yuyuyu.setting.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptionsBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navOptions
-import jp.yuyuyu.home.HomeScreen
+import jp.yuyuyu.setting.SettingScreen
 import kotlinx.serialization.Serializable
 
 @Serializable
-object HomeRoute
+object SettingRoute
 
-fun NavGraphBuilder.homeNavGraph(navigationToSetting: () -> Unit) {
-    composable<HomeRoute> {
-        HomeScreen(onSettingClick = navigationToSetting)
+fun NavGraphBuilder.settingNavGraph() {
+    composable<SettingRoute> {
+        SettingScreen()
     }
 }
 
-fun NavController.navigateToHome(
+fun NavController.navigateToSetting(
     builder: (NavOptionsBuilder.() -> Unit)? = null,
 ) = navigate(
-    route = HomeRoute,
+    route = SettingRoute,
     navOptions = builder?.let(::navOptions)
 )
+
